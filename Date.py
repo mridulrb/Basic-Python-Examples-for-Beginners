@@ -1,7 +1,7 @@
-print "Valid or Invalid Date"
+print ("Valid or Invalid Date")
 x=raw_input("enter date in DD/MM/YYYY : ")
 if (len(x)!=10):
-    print "enter in DD/MM/YYYY format"
+    print ("enter in DD/MM/YYYY format")
 else:    
     d1=x[0]
     d2=x[1]
@@ -19,23 +19,23 @@ else:
     if (month<=12 and month>=1):
         if (month in a):
             if (date>=1 and date<=31):
-                print "Valid Date"
+                print ("Valid Date")
             else:
-                print "Invalid Date"
+                print ("Invalid Date")
         elif (month in b):
             if (date>=1 and date <=30):
-                print "Valid Date"
+                print ("Valid Date")
             else:
-                print "Invalid Date"
+                print ("Invalid Date")
         elif (month==2):
             if (year%4==0 and date>=1 and date<=28):
-                print "Valid Date"
+                print ("Valid Date")
             elif (year%4!=0 and date>=1 and date<=27):
-                print "The date is valid."
+                print ("The date is valid.")
             else:
-                print "Invalid Date"
+                print ("Invalid Date")
     else:
-        print "Invalid Date"
+        print ("Invalid Date")
 
 
 
