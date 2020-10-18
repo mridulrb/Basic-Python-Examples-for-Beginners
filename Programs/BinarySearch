@@ -1,0 +1,46 @@
+a=input("enter no of entries")
+y=list()
+for i in range(0,a):
+    n=input("enter element to be added to the list")
+    y=y+[n]
+z=input("enter the no your searching for")
+length=len(y)
+if (length%2==0):
+    mid=(length/2)-1
+elif(length%2!=0):
+    mid=((length+1)/2)-1
+q=y[mid]
+if (y[length-1]>y[0]):
+    if(z==q):
+        print "yes"
+        print "index", mid
+        print "element searched for",y[mid]
+    elif(z>q):
+        for r in range(mid+1,length):
+            if (z==y[r]):
+                print "yes"
+                print "index",r
+                print "element searched for ",y[r]
+            elif(z<q):
+                for r in range(mid-1,-1,-1):
+                    if (z==y[r]):
+                        print "yes"
+                        print "index",r
+                        print "element searched for",y[r]
+elif(y[length-1]<y[0]):
+            if(z==q):
+                print "yes"
+                print "index", mid
+                print "element searched for",y[mid]
+            elif(z<q):
+                for r in range(mid+1,length):
+                    if (z==y[r]):
+                        print "yes"
+                        print "index",r
+                        print "element searched for ",y[r]
+            elif(z>q):
+                for r in range(mid-1,-1,-1):
+                    if (z==y[r]):
+                            print "yes"
+                            print "index",r
+                            print "element searched for",y[r]

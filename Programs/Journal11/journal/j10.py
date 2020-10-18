@@ -1,0 +1,1 @@
+s=0r=0a=0n=input("Enter number: ")import mathx=int(math.floor(n))while (x>=1):    if (x%2==1):        s=(1*(10**a))+s    x=x/2    a+=1x=n-math.floor(n)for i in range(1,11):    x=x*2    if (x>=1):        r=r+(float(1)/(10**i))        x=x-1print s+r  

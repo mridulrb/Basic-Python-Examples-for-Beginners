@@ -1,0 +1,10 @@
+for n in range (100,1000):
+Num=n
+Sum=0
+m = Num%10
+Num=Num/10
+y=Num%10
+Num=Num/10
+Sum = Sum + pow(m,3)+pow(y,3)+pow(Num,3)
+if (Sum == n):
+print n

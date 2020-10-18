@@ -1,0 +1,5 @@
+n=input("enter range")
+x=0
+while(x<n):
+    print x,"is less than ",n
+    x+=1

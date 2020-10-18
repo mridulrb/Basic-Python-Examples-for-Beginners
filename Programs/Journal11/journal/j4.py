@@ -1,0 +1,1 @@
+x=input("Enter base: ")n=input("Enter number of terms: ")s=1for i in range(2,n+1):    s+=(x**i)print "the sum is", s

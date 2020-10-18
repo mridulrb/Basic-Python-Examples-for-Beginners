@@ -1,0 +1,5 @@
+Python is completely object oriented language. It is not "statically typed". 
+you do not need to declare variables before using them. or declare their type. 
+every variable in Python is an object. 
+python supports two types of numbers - integers and floating point numbers. 
+python has a very straightforward syntax.
